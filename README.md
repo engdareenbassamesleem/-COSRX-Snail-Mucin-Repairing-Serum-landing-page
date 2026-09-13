@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Skincare Product Landing Page
 
-# Run and deploy your AI Studio app
+A React and TypeScript portfolio concept for a COSRX product landing page. This is an independent design/development exercise, not an official brand website.
 
-This contains everything you need to run your app locally.
+## Page structure
 
-View your app in AI Studio: https://ai.studio/apps/drive/1fvRec0RL3IliTgRZLCSeUzwq2iJeg9He
+The App composes a header, hero, benefits, before/after section, how-to-use content, testimonials, limited-offer section and footer. Reusable Button and Section components support the layout.
 
-## Run Locally
+## Run locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+Create a production build with npm run build and inspect it with npm run preview. No AI API key is required by the current UI.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Stack:** React 19, TypeScript, Vite and Lucide icons.
+
+## Scope
+
+This repository demonstrates frontend composition and product presentation. It does not include a checkout backend, inventory service or order processing. Product claims, testimonials and visual material are presentation content and should be independently verified before commercial use.
+
+## Project map
+
+- App.tsx: page composition.
+- components/: individual landing-page sections.
+- constants.ts and types.ts: shared content and types.
+- index.html and index.tsx: browser entry points.
+
+The project originated from an AI Studio scaffold; this README describes the actual frontend rather than generic deployment instructions.
